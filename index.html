@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тренер з баскетболу</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+
+</head>
+<body>
+    <section class="main_page">
+        <div class="wrapper">
+            <header>
+                <img src="./Img/basketball-swoosh-clipart-basketball-clipart-no-background-944016.png" alt="Логотип">
+                <p class="logo_text">
+                    RDZGR
+                </p>
+            </header>
+            <div class="main_page_row"> 
+                <div class="coatch_container">
+                    <h1 class="coatch_title">Тренер з баскетболу</h1>
+                    <ul class="coach_descr">
+                        <li><span class="list_dot">🔴</span>Чемпіон турнірів 3х3</li>
+                        <li><span class="list_dot">🔴</span>Призер аматорських турнірів 5х5</li>
+                        <li><span class="list_dot">🔴</span>Тренер не тільки за спеціальністю, а й душею</li>
+                    </ul>
+                    <button class="button" id="open-form-modal-btn">Закинути м’ячик</button>
+                </div>
+                <img src="./Img/dlpng_com_lebron-james-red_28520.png" alt="Lebron" class="coach_img">
+            </div>
+        </div>
+    </section>
+
+    <section class="coatch_facts">
+        <img src="./Img/basketball-swoosh-clipart-basketball-clipart-no-background-944016.png" alt="logo" class="logo">
+        <h2 class="second_title">Переваги моїх тренувань</h2>
+        <div class="coatch_facts_container">
+        <div class="coatch_fact_item">
+            <img src="./Img/pngegg-2.png" alt="player1" class="coatch_fact_img1">
+            <h3 class="coatch_fact_title">Формування техніки кидка</h3>
+            <p class="coatch_fact_dscr">Індивідуальний підхід з урахуванням фізичних особливостей</p>
+        </div>
+        <div class="coatch_fact_item">
+            <img src="./Img/pngegg.jpeg" alt="player2" class="coatch_fact_img2">
+            <h3 class="coatch_fact_title2">Ефектна гра</h3>
+            <p class="coatch_fact_dscr">Навчу ефектно обігрувати суперника. Виконувати трюки, які допоможуть ефектно виглядати на ігровому майданчику</p>
+        </div>
+        <div class="coatch_fact_item">
+            <img src="./Img/pngegg-3.png" alt="player3" class="coatch_fact_img3">
+            <h3 class="coatch_fact_title">Відпрацювання SlamDunk</h3>
+            <p class="coatch_fact_dscr">Розповім про всі особливості виконання та продемонструю.
+            Покращимо всі необхідні фізичні показники</p>
+        </div>
+        </div>
+    </section>
+
+    <footer class="dream_footer">
+        <div class="dream_bgd">
+            <img src="./Img/basketball-swoosh-clipart-basketball-clipart-no-background-944016.png" alt="basket_logo" class="basket_logo">
+            <h2 class="dream_title">Вперед до мрії</h2>
+            <p class="dream_descr">Головна мета - допомогти довести техніку виконання до автоматизму та надати впевненість на ігровому майданчику, а також
+            надати основи гарної гри</p>
+        </div>
+    </footer>
+
+    <div class="modal_bdg" id="form-modal">
+        <div class="modal_form_container">
+            <button class="close-btn">X</button>
+            <form action="#" class="modal_form" data-netlify="true" id="form">
+             <img src="./Img/basketball-swoosh-clipart-basketball-clipart-no-background-944016.png" alt="basket_logo">
+             <h3 class="modal_form_title">Поділіться, будь ласка, поштою</h3>
+             <p class="modal_form_dscr">Зроби крок до своєї мрії</p>
+                <div class="modal_form_field">
+                  <label for="user_name" class="modal_field_name">Ім’я</label>
+                  <input required type="text" class="modal_field_input" id="user_name" name="Ім’я">
+                </div>
+                <div class="modal_form_field">
+                  <label for="user_email" class="modal_field_name">Email</label>
+                  <input required type="email" class="modal_field_input" id="user_email" name="Email">
+             </div>
+             <button class="button" id="launch-btn">Закинути м’ячик</button>
+        
+            </form>
+        </div>
+    </div>
+
+    <div class="modal_bdg" id="success-modal">
+        <div class="modal_form modal_form_container">
+            <button class="close-btn">X</button>
+            <img src="./Img/basketball-swoosh-clipart-basketball-clipart-no-background-944016.png" alt="basket_logo">
+            <h3 class="modal_form_title2">М’ячик у кошику!</h3>
+        </div>
+    </div>
+    <script src="./scripts/form.js"></script>
+</body>
+</html>
